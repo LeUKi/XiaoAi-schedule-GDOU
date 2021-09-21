@@ -7,7 +7,9 @@ function getSections(str, History) {
     let sections = []
     for (let i = start; i <= end; i++) {
         sections.push({
-            section: i
+
+            ...sectionTimes[i-1]
+
         })
     }
     return sections
@@ -106,43 +108,43 @@ function parseList(html) {
 }
 
 let sectionTimes = [{
-    "section": 1,
+    "section": 0,
     "startTime": "08:10",
     "endTime": "08:55"
 }, {
-    "section": 2,
+    "section": 1,
     "startTime": "09:00",
     "endTime": "09:45"
 }, {
-    "section": 3,
+    "section": 2,
     "startTime": "10:15",
     "endTime": "11:00"
 }, {
-    "section": 4,
+    "section": 3,
     "startTime": "11:05",
     "endTime": "11:50"
 }, {
-    "section": 5,
+    "section": 4,
     "startTime": "14:30",
     "endTime": "15:15"
 }, {
-    "section": 6,
+    "section": 5,
     "startTime": "15:20",
     "endTime": "16:05"
 }, {
-    "section": 7,
+    "section": 6,
     "startTime": "16:30",
     "endTime": "17:15"
 }, {
-    "section": 8,
+    "section": 7,
     "startTime": "17:20",
     "endTime": "18:05"
 }, {
-    "section": 9,
+    "section": 8,
     "startTime": "19:30",
     "endTime": "20:15"
 }, {
-    "section": 10,
+    "section": 9,
     "startTime": "20:25",
     "endTime": "21:10"
 }, ]
